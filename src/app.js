@@ -4,7 +4,7 @@ const weatherApp = {
   async fetchCoords(city) {
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${this.apiKey}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${this.apiKey}`
       )
       const data = await response.json()
       const { lat, lon } = data[0]
