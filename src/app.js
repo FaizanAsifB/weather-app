@@ -35,7 +35,7 @@ const weatherApp = {
     const { speed } = data.wind
 
     document.querySelector('.city').innerText = `Weather in ${name}`
-    document.querySelector('.temp').innerText = `${temp}°C`
+    document.querySelector('.temp').innerText = `${Math.round(temp)}°C`
     document
       .querySelector('.icon')
       .setAttribute('src', `https://openweathermap.org/img/wn/${icon}.png`)
