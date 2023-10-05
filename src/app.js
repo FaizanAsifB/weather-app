@@ -1,6 +1,7 @@
-'use strict'
+import { API_KEY } from './config'
+
 const weatherApp = {
-  apiKey: '2668d0c093b57ad7d9e5b7fd8cd74d3a',
+  apiKey: API_KEY,
   async fetchCoords(city) {
     try {
       const response = await fetch(
