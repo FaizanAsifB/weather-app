@@ -1,7 +1,7 @@
-import { API_KEY } from './config'
+import 'dotenv/config'
 
 const weatherApp = {
-  apiKey: API_KEY,
+  apiKey: process.env.API_KEY,
   async fetchCoords(city) {
     try {
       const response = await fetch(
