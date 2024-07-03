@@ -14,12 +14,14 @@ html {
 }
 
 body {
+  position: relative;
   font-family: 'Open Sans', 'sans-serif';
   font-weight: 400;
   background: #222;
-  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-image: url('https://www.pexels.com/photo/person-showing-gray-mountain-534164/');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -40,7 +42,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /* width: 100%; */
   gap: 0.6rem;
   margin-bottom: 2rem;
 }
@@ -59,8 +60,6 @@ body {
 .search--icon {
   background-color: rgba(0, 0, 0, 0);
   color: white;
-  /* height: 24px;
-  width: 24px; */
   font-size: 16px;
 }
 
@@ -69,7 +68,6 @@ body {
   border: none;
   border-radius: 50%;
   padding: 0;
-  /* margin: 0.5em; */
   height: 3.2rem;
   width: 3.2rem;
   background-color: #7c7c7c2b;
@@ -121,4 +119,19 @@ body {
   position: absolute;
   top: 0;
   left: 20px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.hidden {
+  display: none;
 }
